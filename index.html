@@ -32,19 +32,24 @@
             margin-left: 1rem;
             text-decoration: none;
         }
+        /* 英雄区：品牌故事，平台审核必看 */
         .hero {
-            background: #e0e0e0;
-            padding: 4rem 5%;
+            background: #ffffff;
+            padding: 3rem 5%;
             text-align: center;
             color: #222;
+            border-bottom: 1px solid #eee;
         }
         .hero h1 {
-            font-size: 2.2rem;
-            margin-bottom: 1rem;
+            font-size: 2.4rem;
+            margin-bottom: 1.5rem;
+            color: #d4af37;
         }
         .hero p {
-            max-width: 700px;
+            max-width: 800px;
             margin: 0 auto;
+            font-size: 1.1rem;
+            line-height: 1.8;
         }
         .container {
             max-width: 1200px;
@@ -53,10 +58,10 @@
         }
         .section-block {
             background: white;
-            border-radius: 6px;
-            padding: 2rem;
+            border-radius: 8px;
+            padding: 2.5rem;
             margin-bottom: 2rem;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
         .section-block h2 {
             font-size: 1.8rem;
@@ -82,6 +87,10 @@
             border-radius: 6px;
             overflow: hidden;
             box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+        .item:hover {
+            transform: translateY(-3px);
         }
         .item a {
             display: block;
@@ -96,8 +105,8 @@
             text-align: center;
         }
         .contact-info p {
-            font-size: 1.2rem;
-            margin: 1rem 0;
+            font-size: 1.1rem;
+            margin: 1.2rem 0;
         }
         footer {
             background: #222;
@@ -113,15 +122,16 @@
 <header>
     <div class="logo">ZORIX</div>
     <nav>
-        <a href="#home">ホーム</a>
-        <a href="#products">商品</a>
+        <a href="#concept">ブランド紹介</a>
+        <a href="#products">商品ラインナップ</a>
         <a href="#contact">お問い合わせ</a>
     </nav>
 </header>
 
-<section class="hero" id="home">
+<!-- 核心修改区：品牌故事，确保审核能看到 -->
+<section class="hero" id="concept">
     <h1>ZORIX ゾリックス</h1>
-    <p>ZORIXの誕生は、「化」への渇望と「専業価値」の深耕に始まります。ブランド登録の瞬間から、「専門」という二文字をDNAに刻み込み、時流に翻弄されないブランド道を歩んできました。</p>
+    <p>ZORIX（ゾリックス）は、日本のライフスタイルに根ざしたインナーブランドです。<br>「着け心地の良さ」を最優先に、素材選びからデザイン開発まで、こだわり抜いた商品をお届けします。<br>主にQoo10にて展開する公式ショップでは、高品質なレディースインナー、シームレスウェア、ブラジャーセットなどを取り扱っております。</p>
 </section>
 
 <div class="container">
@@ -169,6 +179,7 @@
 
     <section class="section-block contact-info" id="contact">
         <h2>お問い合わせ</h2>
+        <p>ブランド名：ZORIX（ゾリックス）</p>
         <p>メールアドレス：support@zorix.jp</p>
         <p>Qoo10店舗：<a href="https://www.qoo10.jp/g/1194702653" target="_blank">ZORIX公式ショップ</a></p>
     </section>
